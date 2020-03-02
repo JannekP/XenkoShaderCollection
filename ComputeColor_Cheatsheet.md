@@ -1,7 +1,7 @@
-# XenkoShaderCollection
+# ComputeColor Cheatsheet
 
 
-Compute color:
+###Compute color:
 
         // http://en.wikipedia.org/wiki/Blend_modes#Dodge_and_burn
         // The Color Burn mode divides the inverted bottom layer by the top layer, and then inverts the result
@@ -19,73 +19,73 @@ Compute color:
 	
 	
 
-# Inheritance
+## Inheritance
 
-Texturing:
+**Texturing**
 
 streams.TexCoord  -> Texture Coordinates(UVs)
 
 
-Utilities:
+**Utilities**
 
 contains fresnel and convertations
 
 
-Transformation
+**Transformation**
 
 Eye.xyz  -> Cameraposition
 
 
-MaterialSurfaceDiffuse:
+**MaterialSurfaceDiffuse**
 
 streams.matDiffuse
 streams.matColorBase
 
 
-<bool TInvert> : MaterialSurfaceGlossinessMap<TInvert>:
+**<bool TInvert> : MaterialSurfaceGlossinessMap<TInvert>**
 
 streams.matGlossiness
 
 
-NormalStream:
+**NormalStream**
 
 streams.meshNormalWS
 streams.normalWS
 streams.NdotL
 
 
-ColorBase:
+**ColorBase**
 
 streams.Color
 
 
-VelocityStream:
+**VelocityStream**
 
 streams.velocity
 streams.ShadingPosition
 
 
-PositionStream4:
+**PositionStream4**
 
 streams.PositionWS.xyz  -> World Position
 streams.DepthVS
 
 
-# Functions
+## Functions
 
-abs(x)
+**abs(x)**
 Returns the absolute value of the specified value.
 
-acos(x)
+**acos(x)**
 Returns the arccosine of the specified value.
 
-ret all(x)
+**all(x)**
 Determines if all components of the specified value are non-zero.
 
-ret ceil(x)
+**ceil(x)**
 Returns the smallest integer value that is greater than or equal to the specified value.
 
-clamp(x, min, max)
+**clamp(x, min, max)**
 Clamps the specified value to the specified minimum and maximum range.
 
 dot()
