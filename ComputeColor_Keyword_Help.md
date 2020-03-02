@@ -14,6 +14,10 @@ Compute color:
 	Global.Time
 
 	streams.Position
+	
+	Math.PI
+	
+	
 
 # Inheritance
 
@@ -27,10 +31,9 @@ Utilities:
 contains fresnel and convertations
 
 
-Transformation, PositionStream4:
+Transformation
 
 Eye.xyz  -> Cameraposition
-streams.PositionWS.xyz  -> World Position
 
 
 MaterialSurfaceDiffuse:
@@ -64,12 +67,27 @@ streams.ShadingPosition
 
 PositionStream4:
 
+streams.PositionWS.xyz  -> World Position
 streams.DepthVS
 
 
 # Functions
 
-clamp()
+abs(x)
+Returns the absolute value of the specified value.
+
+acos(x)
+Returns the arccosine of the specified value.
+
+ret all(x)
+Determines if all components of the specified value are non-zero.
+
+ret ceil(x)
+Returns the smallest integer value that is greater than or equal to the specified value.
+
+clamp(x, min, max)
+Clamps the specified value to the specified minimum and maximum range.
+
 dot()
 frac()
 lerp()
