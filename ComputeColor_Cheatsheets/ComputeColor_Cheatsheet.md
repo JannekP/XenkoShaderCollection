@@ -1,7 +1,7 @@
 # ComputeColor Cheatsheet
 
 
-###Compute color:
+### Compute color:
 
         // http://en.wikipedia.org/wiki/Blend_modes#Dodge_and_burn
         // The Color Burn mode divides the inverted bottom layer by the top layer, and then inverts the result

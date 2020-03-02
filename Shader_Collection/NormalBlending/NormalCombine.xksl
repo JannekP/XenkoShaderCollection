@@ -1,0 +1,15 @@
+﻿shader NormalCombine : ComputeColor
+    {
+        compose ComputeColor NormalMap1; 
+        compose ComputeColor NormalMap2; 
+
+        override float4 Compute()
+        {
+            float4 color1 = NormalMap1.Compute();
+            float4 color2 = NormalMap2.Compute();
+            float4 finalColor = float4(color1.x + color2.x, color1.y + color2.y, color1.z + color2.z, 1);
+            finalColor = normalize(finalColor);
+
+            return float4(finalColor);
+        }
+};
